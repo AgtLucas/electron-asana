@@ -30,7 +30,6 @@ function createMainWindow() {
 
   win.loadUrl('https://asana.com/#login');
   win.on('closed', app.quit);
-  win.on('page-title-updated', (e, title) => updateBadge(title));
 
   return win;
 }
