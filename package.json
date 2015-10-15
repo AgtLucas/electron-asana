@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AgtLucas/asana-app#readme",
   "dependencies": {
     "electron-debug": "^0.2.1"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.33.8"
   }
 }
