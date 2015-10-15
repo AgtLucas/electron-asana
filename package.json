@@ -1,0 +1,19 @@
+{
+  "name": "asana-app",
+  "version": "1.0.0",
+  "description": "Unofficial Asana app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgtLucas/asana-app.git"
+  },
+  "author": "Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgtLucas/asana-app/issues"
+  },
+  "homepage": "https://github.com/AgtLucas/asana-app#readme"
+}
