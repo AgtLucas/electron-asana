@@ -21,7 +21,6 @@ function createMainWindow() {
     'min-width': 400,
     'min-height': 200,
     'icon': path.join(__dirname, 'media', 'icon.png'),
-    'title-bar-style': 'hidden-inset',
     'web-preferences': {
       'node-integration': false,
       'web-security': false,
