@@ -16,6 +16,7 @@
   "electronVersion": "0.33.8",
   "files": [
     "index.js",
+    "browser.css",
     "media/icon.png"
   ],
   "repository": {
