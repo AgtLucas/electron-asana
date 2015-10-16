@@ -26,6 +26,7 @@ function createMainWindow() {
     'web-preferences': {
       'node-integration': false,
       'web-security': false,
+      'preload': path.join(__dirname, 'browser.js'),
       'plugins': true
     }
   });
@@ -47,9 +48,9 @@ app.on('ready', () => {
   });
 
   page.on('new-window', (e, url) => {
-    if (url == 'https://asana.com') {
+    // if (url == 'https://asana.com') {
       e.preventDefault();
       shell.openExternal(url);
-    }
+    // }
   });
 });
