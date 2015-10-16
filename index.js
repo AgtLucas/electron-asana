@@ -20,7 +20,7 @@ function createMainWindow() {
     'height': 600,
     'min-width': 400,
     'min-height': 200,
-    'icon': path.join(__dirname, 'media', 'icon.png'),
+    'icon': path.join(__dirname, 'media', 'Icon.png'),
     'web-preferences': {
       'node-integration': false,
       'web-security': false,

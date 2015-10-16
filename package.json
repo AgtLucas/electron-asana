@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron .",
     "build": "npm run build-osx && npm run build-linux",
-    "build-osx": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media$' --prune --platform=darwin --arch=x64 --icon=media/Icon.png --app-bundle-id=com.agtlucas.blackbriar --sign='Developer ID Application: Lucas da Silva (2F44PLUEMS)' --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/Blackbriar-darwin-x64 && zip -ryXq9 ../Blackbriar-${npm_package_version}.zip Blackbriar.app",
+    "build-osx": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media$' --prune --platform=darwin --arch=x64 --icon=media/Icon.icns --app-bundle-id=com.agtlucas.blackbriar --sign='Developer ID Application: Lucas da Silva (2F44PLUEMS)' --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/Blackbriar-darwin-x64 && zip -ryXq9 ../Blackbriar-${npm_package_version}.zip Blackbriar.app",
     "build-linux": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media/(?!Icon.png$).*' --prune --platform=linux --arch=x64 --app-bundle-id=com.agtlucas.blackbriar --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/Blackbriar-linux-x64/ && zip -ryq9 ../Blackbriar-linux-\"$npm_package_version\".zip *"
   },
   "engines": {
