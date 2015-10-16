@@ -1,3 +1,11 @@
 #navigation_dock.left-pane-expanded {
   padding-top: 30px;
 }
+
+.remix-topbar>.search-field-wrapper {
+  margin-top: 20px;
+}
+
+.react-mount-node .topbar {
+  padding-top: 20px;
+}

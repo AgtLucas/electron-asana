@@ -17,12 +17,13 @@ function createMainWindow() {
   const win = new BrowserWindow({
     'title': app.getName(),
     'show': false,
-    'width': 1000,
-    'height': 800,
+    'width': 1100,
+    'height': 700,
     'min-width': 400,
     'min-height': 200,
     'title-bar-style': 'hidden-inset',
     'icon': path.join(__dirname, 'media', 'Icon.png'),
+    'node-integration': false,
     'web-preferences': {
       'node-integration': false,
       'preload': path.join(__dirname, 'browser.js'),
@@ -49,6 +50,7 @@ app.on('ready', () => {
 
   page.on('new-window', (e, url) => {
     console.log(url);
+    console.log(page.getUrl());
     if (url != 'https://accounts.google.com/o/oauth2/auth') {
       e.preventDefault();
       shell.openExternal(url);
