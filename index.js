@@ -48,7 +48,10 @@ app.on('ready', () => {
   });
 
   page.on('new-window', (e, url) => {
-    e.preventDefault();
-    shell.openExternal(url);
+    console.log(url);
+    if (url != 'https://accounts.google.com/o/oauth2/auth') {
+      e.preventDefault();
+      shell.openExternal(url);
+    }
   });
 });
