@@ -48,9 +48,7 @@ app.on('ready', () => {
   });
 
   page.on('new-window', (e, url) => {
-    // if (url == 'https://asana.com') {
-      e.preventDefault();
-      shell.openExternal(url);
-    // }
+    e.preventDefault();
+    shell.openExternal(url);
   });
 });

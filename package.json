@@ -17,7 +17,9 @@
   "files": [
     "index.js",
     "browser.css",
-    "media/icon.png"
+    "browser.js",
+    "media/icon.png",
+    "media/Icon.icns"
   ],
   "repository": {
     "type": "git",
