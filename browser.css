@@ -2,6 +2,8 @@
   padding-top: 30px;
 }
 
+.left-pane-collapsed+#asana_main>.full-width-header,
+.full-width-header.full-width-header--expanded,
 .remix-topbar>.search-field-wrapper {
   margin-top: 20px;
 }
