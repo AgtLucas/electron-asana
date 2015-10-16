@@ -25,8 +25,8 @@ function createMainWindow() {
     'icon': path.join(__dirname, 'media', 'Icon.png'),
     'web-preferences': {
       'node-integration': false,
-      'web-security': false,
       'preload': path.join(__dirname, 'browser.js'),
+      'web-security': false,
       'plugins': true
     }
   });
