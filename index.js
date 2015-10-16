@@ -4,7 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var app = require('app');
 var BrowserWindow = require('browser-window');
-var shel = require('shell');
+var shell = require('shell');
 var menu = require('menu');
 
 require('electron-debug')();
