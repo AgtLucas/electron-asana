@@ -49,11 +49,7 @@ app.on('ready', () => {
   });
 
   page.on('new-window', (e, url) => {
-    console.log(url);
-    console.log(page.getUrl());
-    if (url != 'https://accounts.google.com/o/oauth2/auth') {
-      e.preventDefault();
-      shell.openExternal(url);
-    }
+    e.preventDefault();
+    shell.openExternal(url);
   });
 });
