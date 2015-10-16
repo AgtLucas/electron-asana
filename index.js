@@ -11,6 +11,7 @@ require('electron-debug')();
 require('crash-reporter').start();
 
 let mainWindow;
+const loginUrl = 'https://asana.com/#login';
 
 function createMainWindow() {
   const win = new BrowserWindow({
@@ -28,7 +29,7 @@ function createMainWindow() {
     }
   });
 
-  win.loadUrl('https://asana.com/#login');
+  win.loadUrl(loginUrl);
   win.on('closed', app.quit);
 
   return win;
@@ -38,16 +39,14 @@ app.on('ready', () => {
   mainWindow = createMainWindow();
 
   const page = mainWindow.webContents;
-  var currentUrl = page.getUrl();
 
   page.on('dom-ready', () => {
     mainWindow.show();
-    mainWindow.openDevTools();
   });
 
   page.on('new-window', (e, url) => {
-    e.preventDefault();
-    if (currentUrl !== 'https://asana.com/#login') {
+    if (url == 'https://asana.com') {
+      e.preventDefault();
       shell.openExternal(url);
     }
   });
