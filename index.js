@@ -38,13 +38,17 @@ app.on('ready', () => {
   mainWindow = createMainWindow();
 
   const page = mainWindow.webContents;
+  var currentUrl = page.getUrl();
 
   page.on('dom-ready', () => {
     mainWindow.show();
+    mainWindow.openDevTools();
   });
 
   page.on('new-window', (e, url) => {
     e.preventDefault();
-    shell.openExternal(url);
+    if (currentUrl !== 'https://asana.com/#login') {
+      shell.openExternal(url);
+    }
   });
 });
