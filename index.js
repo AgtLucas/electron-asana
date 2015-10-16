@@ -17,8 +17,8 @@ function createMainWindow() {
   const win = new BrowserWindow({
     'title': app.getName(),
     'show': false,
-    'width': 800,
-    'height': 600,
+    'width': 1000,
+    'height': 800,
     'min-width': 400,
     'min-height': 200,
     'title-bar-style': 'hidden-inset',
