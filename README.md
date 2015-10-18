@@ -1,6 +1,6 @@
 # Blackbriar
 
-Unofficial Asana app
+Unofficial Asana app.
 
 ## TODO:
 
