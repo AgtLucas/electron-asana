@@ -4,5 +4,5 @@ Unofficial Asana app
 
 ## TODO:
 
-- [ ] Fix login
-- [ ] Notification
+- [ ] Fix login.
+- [ ] Notification.
